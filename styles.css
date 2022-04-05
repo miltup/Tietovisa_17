@@ -1,10 +1,7 @@
-#column {
-    border: 2px solid black;
-    margin: 1em;
+[class*="col"] {
+    padding-top: 2.5em;
 }
 
-[class*="col-md-6"] {
-    padding: 2.5em;
-}
+
 
 

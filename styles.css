@@ -1,0 +1,10 @@
+#column {
+    border: 2px solid black;
+    margin: 1em;
+}
+
+[class*="col-md-6"] {
+    padding: 2.5em;
+}
+
+

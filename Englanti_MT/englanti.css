@@ -1,0 +1,40 @@
+/*Milla Tuppurainen*/
+
+/*Radio-buttons and their text*/
+.form-check-input {
+    border: solid #C841BA;
+}
+
+.form-check-label {
+    border: solid #C841BA;
+    padding: 5px;
+}
+
+/*Argument-field*/
+[id*="argument"] {
+    margin: 10px;
+    padding: 5px;
+    border: solid #81F4E1;
+    min-height: 50px;
+}
+
+/*Amount of answered questions-field*/
+#answeredQuestions {
+    border: solid #FF3374;
+    padding: 5px;
+}
+
+/*Points*/
+#engbutton {
+    background-color: #8F002B;
+    border-color: #FF3374;
+}
+
+#results {
+    border: solid #FF3374;
+    padding: 5px;
+}
+
+#treasureChest {
+    visibility: hidden;
+}

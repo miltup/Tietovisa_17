@@ -10,7 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--CSS-->
-    <link href="/styles.css" rel="stylesheet">
     <link href="/Englanti_MT/englanti.css" rel="stylesheet">
 
     <!--Font Awesome-->
@@ -23,14 +22,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Englanti <i class="fa-solid fa-brain"></i></h1>
+                <h1>Englanti <i class="fa-solid fa-language"></i></h1>
             </div>
         </div>
         <div class="row" id="eng">
-            <div class="col" id="eng">
-                <p>
-                    Täällä pääset testaamaan englanninkielen taitojasi.
-                </p>
+            <div class="col" id="firstCol">
+                <h2>Täällä pääset testaamaan englanninkielen taitojasi.</h2>
                 <ul>
                     <li>Tehtävässä on viisi kysymystä.</li> 
                     <li>Kaikilla kysymyksillä on neljä vastausvaihtoehtoa.</li>
@@ -43,8 +40,8 @@
         </div>
         <div class="row" id="eng">
             <div class="col-sm-12 col-md-6" id="eng">
-                <h5>Kysymys 1</h5>
-                <p id="engkysymys">
+                <h5><i class="fa-solid fa-train"></i> Kysymys 1</h5>
+                <p id="question">
                     Miten opastaisit ihmistä, joka haluaa löytää rautatieaseman?
                     Rautatieasema sijaitsee seuraavasta risteyksestä oikealle ja suoraan tien päähän saakka.
                 </p>
@@ -77,8 +74,8 @@
                 </p>
             </div>
             <div class="col-sm-12 col-md-6" id="eng">
-                <h5>Kysymys 2</h5>
-                <p id="engkysymys">
+                <h5><i class="fa-solid fa-cake-candles"></i> Kysymys 2</h5>
+                <p id="question">
                 Miten sanoisit että syntymäpäiväsi on 3. Huhtikuuta?
                 </p>
                 <!--Bootstrap radio buttons for question 2-->
@@ -111,8 +108,8 @@
         </div>
         <div class="row" id="eng">
             <div class="col-sm-12 col-md-6" id="eng">
-                <h5>Kysymys 3</h5>
-                <p id="engkysymys">
+                <h5><i class="fa-solid fa-school"></i> Kysymys 3</h5>
+                <p id="question">
                     Miten kertoisit, että olette opetelleet koulussa matikkaa ja ympäristötietoa?    
                 </p>
                 <!--Bootstrap radio buttons for question 3-->
@@ -143,8 +140,8 @@
                 <p id="argument3"></p>
             </div>
             <div class="col-sm-12 col-md-6" id="eng">
-                <h5>Kysymys 4</h5>
-                <p id="engkysymys">
+                <h5><i class="fa-solid fa-book"></i> Kysymys 4</h5>
+                <p id="question">
                 Miten sanoisit, että laatikko on kirjan ja hyllyn välissä?    
                 </p>
                 <!--Bootstrap radio buttons for question 4-->
@@ -177,8 +174,8 @@
         </div>
         <div class="row" id="eng">
             <div class="col-sm-12 col-md-6" id="eng">
-                <h5>Kysymys 5</h5>
-                <p id="engkysymys">
+                <h5><i class="fa-solid fa-volleyball"></i> Kysymys 5</h5>
+                <p id="question">
                 Miten kertoisit, että harrastat lentopalloa?   
                 </p>
                 <!--Bootstrap radio buttons for question 5-->
@@ -220,9 +217,18 @@
             </div>
         </div>
         <div class="row">   
-            <div class="col">
+            <div class="col" id="bonusquestion">
+                <h5>Bonus kysymys!</h5>
+                <p>Tiedätkö mikä rakennus on alla olevassa kuvassa?</p>
+                <input type="text">
+                <button type="button" class="btn btn-primary" id="bonusbutton" onclick="checkBonus()">Tarkista</button>
+                <p id="bonusresult"></p>
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col" id="image">
                 <!--Bootstrap Responsive Image-->
-                <img src="englanti_Images/big-ben-ge518e6761_1920.jpg" class="img-fluid" alt="Big Ben">
+                <img src="englanti_Images/big-ben-ge518e6761_1920.jpg" class="img-fluid" alt="Big Ben" id="bigben">
             </div>
         </div>        
     </div>

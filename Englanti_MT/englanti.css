@@ -1,25 +1,50 @@
 /*Milla Tuppurainen*/
 
-/*Radio-buttons and their text*/
-.form-check-input {
-    border: solid #C841BA;
+/*Google Font*/
+@font-face {
+    font-family: "IndieFlower";
+    src: url("/Fonts/Indie_Flower/IndieFlower-Regular.ttf");
+  }
+
+h1, h2 {
+    font-family: IndieFlower;
+    margin: 5px;
 }
 
-.form-check-label {
-    border: solid #C841BA;
-    padding: 5px;
+#firstCol {
+    background-image: url("englanti_Images/union-jack-g0ad4e8d74_1280.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+    margin: 20px;
+}
+
+/*Questions*/
+#question {
+    background-image: linear-gradient(#FF3374, white);
+    font-weight: bold;
+}
+
+/*Radio-buttons and their text*/
+.form-check-input {
+    border: solid #FF3374;
 }
 
 /*Argument-field*/
 [id*="argument"] {
+    visibility: hidden;
     margin: 10px;
     padding: 5px;
     border: solid #81F4E1;
     min-height: 50px;
+    background-image: linear-gradient(#81F4E1, white);
 }
 
 /*Amount of answered questions-field*/
 #answeredQuestions {
+    visibility: hidden;
     border: solid #FF3374;
     padding: 5px;
 }
@@ -28,13 +53,20 @@
 #engbutton {
     background-color: #8F002B;
     border-color: #FF3374;
+    margin: 10px;
 }
 
 #results {
+    visibility: hidden;
     border: solid #FF3374;
     padding: 5px;
 }
 
 #treasureChest {
     visibility: hidden;
+}
+
+#bonusbutton {
+    background-color: #56CBF9;
+    margin: 10px;
 }

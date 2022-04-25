@@ -1,8 +1,19 @@
+/* Google Font 
+@font-face {
+    font-family: "IndieFlower";
+    src: url("/Fonts/Indie_Flower/IndieFlower-Regular.ttf");
+}
+
+h1 {
+    font-family: IndieFlower;
+}
+*/
 [class*="col"] {
     padding-top: 2.5em;
+    border: 2px solid black;
 }
 
 .btn {
     background-color: #81F4E1;
-    border: 2px solid black;
+    border: 2px solid #C841BA;
 }

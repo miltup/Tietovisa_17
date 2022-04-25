@@ -4,4 +4,4 @@ Palkinnot:
 2 oikein: emerald
 3 oikein: ruby
 4 oikein: diamond
-5 oikei: chest
+5 oikein: chest

@@ -1,0 +1,8 @@
+[class*="col"] {
+    padding-top: 2.5em;
+}
+
+.btn {
+    background-color: #81F4E1;
+    border: 2px solid black;
+}

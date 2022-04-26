@@ -1,13 +1,13 @@
-/* Google Font 
+/* Google Font */
 @font-face {
     font-family: "IndieFlower";
-    src: url("/Fonts/Indie_Flower/IndieFlower-Regular.ttf");
+    src: url("../Fonts/Indie_Flower/IndieFlower-Regular.ttf");
 }
 
 h1 {
     font-family: IndieFlower;
 }
-*/
+
 [class*="col"] {
     padding-top: 2.5em;
     border: 2px solid black;

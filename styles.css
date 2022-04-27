@@ -7,20 +7,25 @@ h1 {
     font-family: IndieFlower;
 }
 
-.navigaatiopalkki {
-    position:absolute;
-    left:0;
-    margin-top: -100px;
-    height: 87vh;
-    width: 150px;
-    overflow: hidden;
+.container-fluid * {
+    justify-content:center;
+    align-items: center;
+}
+header {
+    background-color: #C841BA;
+}
+.navbar-custom {
+    background-color: #81F4E1;
+}
+footer {
+    background-color: #81F4E1;
 }
 
-.navigaatiopalkki * {
-    color:black;
-    text-decoration: none;
-    padding: 5px;
-}
-.list-unstyled li {
-    padding-top:25px;
-}
+/* 
+Primary: #C841BA
+Secondary: #81F4E1
+Success: #56CBF9
+Info: #AB9FCC
+Warning: #FF3374
+Danger: #8F002B 
+*/

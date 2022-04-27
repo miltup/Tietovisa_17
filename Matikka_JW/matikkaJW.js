@@ -7,8 +7,8 @@ function getRndInteger(min, max) {
 let number1 = Number(document.getElementById("number1").value);
 let number2 = Number(document.getElementById("number2").value);
 
-number1 = getRndInteger(0, 100);
-number2 = getRndInteger(0, 100);
+number1 = getRndInteger(0, 50);
+number2 = getRndInteger(0, 50);
 
 document.getElementById("number1").innerHTML = number1;
 document.getElementById("number2").innerHTML = number2;
@@ -17,8 +17,8 @@ document.getElementById("number2").innerHTML = number2;
 let number3 = Number(document.getElementById("number3").value);
 let number4 = Number(document.getElementById("number4").value);
 
-number3 = getRndInteger(0, 100);
-number4 = getRndInteger(0, 100);
+number3 = getRndInteger(50, 100);
+number4 = getRndInteger(0, 50);
 
 document.getElementById("number3").innerHTML = number3;
 document.getElementById("number4").innerHTML = number4;
@@ -38,9 +38,9 @@ let number7 = Number(document.getElementById("number7").value);
 let number8 = Number(document.getElementById("number8").value);
 let number9 = Number(document.getElementById("number9").value);
 
-number7 = getRndInteger(0, 100);
-number8 = getRndInteger(0, 100);
-number9 = getRndInteger(0, 100);
+number7 = getRndInteger(0, 50);
+number8 = getRndInteger(0, 50);
+number9 = getRndInteger(0, 50);
 
 document.getElementById("number7").innerHTML = number7;
 document.getElementById("number8").innerHTML = number8;
@@ -53,7 +53,7 @@ let number12 = Number(document.getElementById("number12").value);
 
 number10 = getRndInteger(0, 100);
 number11 = getRndInteger(0, 100);
-number12 = getRndInteger(0, 100);
+number12 = getRndInteger(0, 50);
 
 document.getElementById("number10").innerHTML = number10;
 document.getElementById("number11").innerHTML = number11;

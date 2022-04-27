@@ -29,3 +29,7 @@ p.visa {
 ul {
     list-style-type: none;
 }
+
+[class*="fa"] {
+    padding-right: 5px;
+} 

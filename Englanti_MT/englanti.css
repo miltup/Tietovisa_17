@@ -1,4 +1,4 @@
-/*Milla Tuppurainen*/
+/* Milla Tuppurainen */
 
 /*Google Font*/
 @font-face {
@@ -6,13 +6,14 @@
     src: url("/Fonts/Indie_Flower/IndieFlower-Regular.ttf");
   }
 
+/*Instructions*/
 h1, h2 {
     font-family: IndieFlower;
     margin: 5px;
 }
 
 #firstCol {
-    background-image: url("englanti_Images/union-jack-g0ad4e8d74_1280.png");
+    background-image: url("englanti_Images/union-jack.png");
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,11 +63,26 @@ h1, h2 {
     padding: 5px;
 }
 
-#treasureChest {
-    visibility: hidden;
+/*Bonusquestion*/
+#bonusHeader {
+    font-family: IndieFlower;
+    margin: 5px;
 }
 
 #bonusbutton {
-    background-color: #56CBF9;
+    background-color: #8F002B;
+    border-color: #FF3374;
     margin: 10px;
 }
+
+#image {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }

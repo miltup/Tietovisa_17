@@ -11,9 +11,16 @@ h1 {
     justify-content:center;
     align-items: center;
 }
+
 header {
-    background-color: #C841BA;
+    background-color: #C841BA;;
 }
+
+#headerimage {
+    max-width: 100px;
+    float: right;
+}
+
 .navbar-custom {
     background-color: #81F4E1;
 }

@@ -16,8 +16,39 @@
 
     <title>Tietovisa seikkailu neljäsluokkalaisille</title>
   </head>
-  <body>
-
+    <body class="d-flex flex-column min-vh-100">
+        <!-- Header  -->
+         <header class="text-center border border-dark">
+            <img src="../Images/prizes.png" alt="palkinnot" id="headerimage">
+            <h2>Tietovisa seikkailu neljäsluokkalaisille</h2>
+         </header>
+         <!-- Header ^ -->
+         <nav class="navbar navbar-expand-lg navbar-light mb-5 border border-3 border-dark navbar-custom">
+           <div class="container-fluid">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="/index.html">Etusivu</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="/Englanti_MT/englanti.html">Englanninkielen visa</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="/Matikka_JW/matikkaJW.html">Matikkavisa 1</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="/Matikka_SV/matikkaSV.html">Matikkavisa 2</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="/Tietoja_sivu/tietoja.html">Tietoja</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </nav>
     <!--Bootstrap Grid-->
     <div class="container">
         <div class="row">
@@ -33,8 +64,8 @@
                 <ul>
                     <li><i class="fa-brands fa-bootstrap"></i>Etusivun bootsrap-pohja ja grid</li>
                     <li><i class="fa-solid fa-circle-info"></i>Tietoja-sivu</li>
-                    <li><i class="fa-solid fa-award"></i> Palkintokuvien valitseminen</li>
-                    <li></li>
+                    <li><i class="fa-solid fa-award"></i> Palkintojen valitseminen</li>
+                    <li><i class="fa-solid fa-image"></i>Header-kuvan teko</li>
                     <li></li>
                 </ul>
             </div> 
@@ -45,14 +76,14 @@
                 <ul>
                     <li><i class="fa-solid fa-table-cells-large"></i>Wireframe</li>
                     <li><i class="fa-solid fa-brush"></i> Teeman värien valitseminen</li>
-                    <li><i class="fa-solid fa-award"></i> Palkintokuvien valitseminen</li>
+                    <li><i class="fa-solid fa-award"></i> Palkintojen valitseminen</li>
                     <li></li>
                     <li></li>
                 </ul>
             </div>
         </div> 
         <div class="row">
-            <div class="col">
+            <div class="col-md-6">
                 <h5>Sami Vauhkonen</h5>
                 <p class="visa"><i class="fa-solid fa-circle-plus"></i> Matikkavisa 2</p>
                 <h6>Vastuualueet:</h6>
@@ -64,20 +95,15 @@
                     <li></li>
                 </ul>
             </div> 
-            <div class="col">
-                <h5>Henri Virtanen</h5>
-                <p class="visa"><i class="fa-solid fa-rocket"></i> Avaruusvisa</p>
-                <h6>Vastuualueet:</h6>
-                <ul>
-                    <li><i class="fa-solid fa-images"></i>Teeman pohdinta</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
         </div> 
     </div>
+    <footer class="footer text-center border border-dark border-5 mt-auto">
+        <div class="container">
+          <div class="row">
+          <span>Milla Tuppurainen, Sami Vauhkonen, Jante Wallin</span>
+        </div>
+        </div>
+      </footer>
     <!--Bootstrap Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

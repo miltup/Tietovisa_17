@@ -1,9 +1,24 @@
 /* Milla Tuppurainen */
 
+.container-fluid * {
+    justify-content:center;
+    align-items: center;
+}
+header {
+    background-color: #C841BA;
+}
+
+.navbar-custom {
+    background-color: #81F4E1;
+}
+footer {
+    background-color: #81F4E1;
+}
+
 /*Google Font*/
 @font-face {
     font-family: "IndieFlower";
-    src: url("/Fonts/Indie_Flower/IndieFlower-Regular.ttf");
+    src: url("../Fonts/Indie_Flower/IndieFlower-Regular.ttf");
   }
 
 /*Instructions*/
@@ -20,6 +35,10 @@ h1, h2 {
     background-size: cover;
     background-blend-mode: lighten;
     margin: 20px;
+}
+
+li {
+    list-style-type: circle;
 }
 
 /*Questions*/
@@ -73,6 +92,11 @@ h1, h2 {
     background-color: #8F002B;
     border-color: #FF3374;
     margin: 10px;
+}
+
+#bonusresult {
+    border-bottom: 1px solid #8F002B;
+    padding-bottom: 5px;
 }
 
 #image {

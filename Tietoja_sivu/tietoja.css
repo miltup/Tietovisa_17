@@ -1,4 +1,24 @@
 
+.container-fluid * {
+    justify-content:center;
+    align-items: center;
+}
+header {
+    background-color: #C841BA;
+}
+
+#headerimage {
+    max-width: 100px;
+    float: right;
+}
+
+.navbar-custom {
+    background-color: #81F4E1;
+}
+footer {
+    background-color: #81F4E1;
+}
+
 /*Google Font*/
 @font-face {
     font-family: "IndieFlower";

@@ -1,8 +1,15 @@
+/*Google Font*/
+@font-face {
+    font-family: "IndieFlower";
+    src: url("../Fonts/Indie_Flower/IndieFlower-Regular.ttf");
+  }
 
+/*Header*/
 .container-fluid * {
     justify-content:center;
     align-items: center;
 }
+
 header {
     background-color: #C841BA;
 }
@@ -12,25 +19,17 @@ header {
     float: right;
 }
 
+/*Navbar*/
 .navbar-custom {
     background-color: #81F4E1;
 }
-footer {
-    background-color: #81F4E1;
-}
 
-/*Google Font*/
-@font-face {
-    font-family: "IndieFlower";
-    src: url("../Fonts/Indie_Flower/IndieFlower-Regular.ttf");
-  }
-
-/*Heading*/
-h1 {
+/*Headings*/
+h1, h2 {
     font-family: IndieFlower;
 }
 
-/*Groupmember names*/
+/*Listing*/
 h5 {
     font-weight: bold;
     color: #8F002B;
@@ -53,3 +52,8 @@ ul {
 [class*="fa"] {
     padding-right: 5px;
 } 
+
+/*Footer*/
+footer {
+    background-color: #81F4E1;
+}

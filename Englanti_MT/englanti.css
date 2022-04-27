@@ -1,25 +1,30 @@
 /* Milla Tuppurainen */
 
-.container-fluid * {
-    justify-content:center;
-    align-items: center;
-}
-header {
-    background-color: #C841BA;
-}
-
-.navbar-custom {
-    background-color: #81F4E1;
-}
-footer {
-    background-color: #81F4E1;
-}
-
 /*Google Font*/
 @font-face {
     font-family: "IndieFlower";
     src: url("../Fonts/Indie_Flower/IndieFlower-Regular.ttf");
   }
+
+/*Header*/
+.container-fluid * {
+    justify-content:center;
+    align-items: center;
+}
+
+header {
+    background-color: #C841BA;
+}
+
+#headerimage {
+    max-width: 100px;
+    float: right;
+}
+
+/*Navbar*/
+.navbar-custom {
+    background-color: #81F4E1;
+}
 
 /*Instructions*/
 h1, h2 {
@@ -32,12 +37,12 @@ h1, h2 {
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 80% 80%;
     background-blend-mode: lighten;
     margin: 20px;
 }
 
-li {
+#firstCol li {
     list-style-type: circle;
 }
 
@@ -110,3 +115,8 @@ li {
     bottom: 8px;
     right: 16px;
   }
+
+/*Footer*/
+footer {
+    background-color: #81F4E1;
+}

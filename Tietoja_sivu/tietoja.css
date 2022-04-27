@@ -1,0 +1,35 @@
+
+/*Google Font*/
+@font-face {
+    font-family: "IndieFlower";
+    src: url("../Fonts/Indie_Flower/IndieFlower-Regular.ttf");
+  }
+
+/*Heading*/
+h1 {
+    font-family: IndieFlower;
+}
+
+/*Groupmember names*/
+h5 {
+    font-weight: bold;
+    color: #8F002B;
+    border-bottom: 1px solid #8F002B;
+    padding-bottom: 5px;
+}
+
+div {
+    padding: 10px;
+}
+
+p.visa {
+    color: #FF3374;
+}
+
+ul {
+    list-style-type: none;
+}
+
+[class*="fa"] {
+    padding-right: 5px;
+} 

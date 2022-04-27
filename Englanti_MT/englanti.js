@@ -1,5 +1,5 @@
 
-//Milla Tuppurainen
+// Milla Tuppurainen
 
 // VARIABLES
     let question1Answer1Radio = document.querySelector("#flexRadioDefault1");
@@ -155,9 +155,11 @@
 //POINTS
 
     // Prizes
-    let easterEgg1 = '<img src="englanti_Images/easter-egg-g9bd9a8554_1280.png" width=50%>';
-    let easterEgg2 = '<img src="englanti_Images/easter-egg-g6858e1df2_1280.png" width=50%>';
-    let treasureChest = '<img src="englanti_Images/image-from-rawpixel-id-6328559-jpeg.jpg" width=50%>';
+    let coins = '<img src="/Images/coins.png" width=50%>';
+    let emerald = '<img src="/Images/emerald.png" width=50%>'; 
+    let ruby = '<img src="/Images/ruby.png" width=50%>';
+    let diamond = '<img src="/Images/diamond.png" width=50%>';
+    let treasure = '<img src="/Images/chest.png" width=50%>';
 
     // Calculating and returning the points
     let point = 0;
@@ -174,13 +176,19 @@
         let resultsField = document.querySelector("#results");
         resultsField.innerHTML += "Sait " + pointsCount + "/5 pistettä." + "<br>";
 
-        if (pointsCount < 2) {
-            resultsField.innerHTML += easterEgg1 + "<br>" + "Kannattaa vielä harjoitella lisää.";
-        } else if (pointsCount < 5) {
-            resultsField.innerHTML += easterEgg1 + easterEgg2 + "<br>" + "Hyvä suoritus!";
+        if (pointsCount == 1) {
+            resultsField.innerHTML += coins + "<br>" + "Kannattaa vielä harjoitella lisää.";
+        } else if (pointsCount == 2) {
+            resultsField.innerHTML += emerald + "<br>" + "Ok suoritus, voisit kuitenkin vielä harjoitella.";
+        } else if (pointsCount == 3) {
+            resultsField.innerHTML += ruby + "<br>" + "Hyvä suoritus!";
+        } else if (pointsCount == 4) {
+            resultsField.innerHTML += diamond + "<br>" + "Hyvä suoritus!";
+        } else if (pointsCount == 5) {
+            resultsField.innerHTML += treasure + "<br>" + "Onneksi olkoon! Sait täydet pisteet.";
         } else {
-            resultsField.innerHTML += treasureChest + "<br>" + "Onneksi olkoon!";
-        } 
+            resultsField.innerHTML += "<br>" + "Kannattaa vielä harjoitella lisää.";
+        }
 
         resultsField.style.visibility = "visible";
         document.getElementById("engbutton").disabled = true;
@@ -221,5 +229,17 @@
         } return point;
     }
 
-    //Bonus question
-    
+//BONUS QUESTION
+    function checkBonus() {
+        document.getElementById("bonusInput").innerHTML = "";
+        document.getElementById("bonusresult").innerHTML = "";
+
+        let input = document.getElementById("bonusInput").value;
+        let bonusResult = document.getElementById("bonusresult");
+        
+        if (input == "Big Ben") {
+            bonusResult.innerHTML = "Oikein! Kuvassa on Big Ben, Lontoon parlamenttitalon kellotorni.";
+        } else {
+            bonusResult.innerHTML = "Kuvassa on Big Ben, Lontoon parlamenttitalon kellotorni.";
+        } 
+    }

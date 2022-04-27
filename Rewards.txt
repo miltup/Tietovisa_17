@@ -1,0 +1,7 @@
+Palkinnot:
+
+1 oikein: coins
+2 oikein: emerald
+3 oikein: ruby
+4 oikein: diamond
+5 oikein: chest

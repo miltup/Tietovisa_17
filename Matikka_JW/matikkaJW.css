@@ -29,21 +29,29 @@ header h1 {
     background-color: #81F4E1;
 }
 
+/*container*/
 h2 {
     font-family: IndieFlower;
-    margin-top: 30px;
 }
 
-[class*="col"] {
-    border: 2px solid black;
+[class*="col-md"] { 
+    padding: 20px;
 }
 
 .btn {
     background-color: #81F4E1;
-    border: 2px solid #C841BA;
+    border: 2px solid #AB9FCC;
+}
+
+/* aseta falseAnswer punainen teksti ja oikealle vihreä */
+
+/* määrittele palkintokuvan koko tässä */
+.col-md-6 #rewards {
+    max-width: 30px;
 }
 
 /*Footer*/
 footer {
     background-color: #56CBF9;
+    padding: 30px;
 }

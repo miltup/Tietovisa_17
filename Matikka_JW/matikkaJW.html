@@ -17,13 +17,47 @@
 
     <title>Matikkavisa</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+
+  <!--Header-->
+  <header class="text-center border border-dark">
+    <img src="../Images/prizes.png" alt="palkinnot" id="headerimage">
+    <h1>Tietovisa seikkailu neljäsluokkalaisille</h1>
+ </header>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light mb-5 border border-3 border-dark navbar-custom">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Englanti_MT/englanti.html">Englanninkielen visa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Matikka_JW/matikkaJW.html">Matikkavisa 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Matikka_SV/matikkaSV.html">Matikkavisa 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Tietoja_sivu/tietoja.html">Tietoja</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
     
     <!--Bootstrap Grid-->
     <div class="container">
       <div class="row">
         <div class="col">
-            <h1>Tervetuloa matikkavisaan! <i class="fa-solid fa-calculator"></i> </h1>
+            <h2>Tervetuloa matikkavisaan! <i class="fa-solid fa-calculator"></i> </h2>
         </div>     
       </div>
       <div class="row">
@@ -31,7 +65,7 @@
         <!-- Tehtävä 1-->
         <div class="col-md-6">
 
-          <h2>Tehtävä 1</h2>
+          <h3>Tehtävä 1</h3>
           <p>
               <h5>Laske paljonko on:</h5> <br>
 
@@ -48,7 +82,7 @@
         <!-- Tehtävä 2-->
         <div class="col-md-6">
 
-          <h2>Tehtävä 2</h2>
+          <h3>Tehtävä 2</h3>
           <p>
               <h5>Laske paljonko on:</h5> <br>
 
@@ -64,7 +98,7 @@
         <!-- Tehtävä 3-->
         <div class="col-md-6">
 
-          <h2>Tehtävä 3</h2>
+          <h3>Tehtävä 3</h3>
           <p>
               <h5>Laske paljonko on:</h5> <br>
 
@@ -80,7 +114,7 @@
         <!-- Tehtävä 4-->
         <div class="col-md-6">
 
-          <h2>Tehtävä 4</h2>
+          <h3>Tehtävä 4</h3>
           <p>
               <h5>Laske paljonko on:</h5> <br>
 
@@ -96,7 +130,7 @@
         <!-- Tehtävä 5-->
         <div class="col-md-6">
 
-          <h2>Tehtävä 5</h2>
+          <h3>Tehtävä 5</h3>
           <p>
               <h5>Laske paljonko on:</h5> <br>
 
@@ -123,6 +157,14 @@
 
       </div>
     </div>  
+
+    <footer class="footer text-center border border-dark border-5 mt-auto">
+      <div class="container">
+        <div class="row">
+        <span>Jante Wallin</span>
+      </div>
+      </div>
+    </footer>
 
       <script src="matikkaJW.js"></script>
       <!--Bootstrap Javascript-->

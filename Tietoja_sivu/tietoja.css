@@ -11,7 +11,12 @@
 }
 
 header {
-    background-color: #C841BA;
+    background-color: #56CBF9;
+}
+
+header h1 {
+    font-family: IndieFlower;
+    margin-top: 30px;
 }
 
 #headerimage {
@@ -55,5 +60,5 @@ ul {
 
 /*Footer*/
 footer {
-    background-color: #81F4E1;
+    background-color: #56CBF9;
 }

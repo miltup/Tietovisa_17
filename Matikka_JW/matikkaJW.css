@@ -43,15 +43,16 @@ h2 {
     border: 2px solid #AB9FCC;
 }
 
-/* aseta falseAnswer punainen teksti ja oikealle vihreä */
+#rewards img {
+    max-width: 100px;
+}
 
-/* määrittele palkintokuvan koko tässä */
-.col-md-6 #rewards {
-    max-width: 30px;
+[id*="false"] {
+    color: #8F002B;
 }
 
 /*Footer*/
 footer {
     background-color: #56CBF9;
-    padding: 30px;
+    padding: 20px;
 }

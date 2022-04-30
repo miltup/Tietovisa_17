@@ -42,8 +42,8 @@ h5 {
     padding-bottom: 5px;
 }
 
-div {
-    padding: 10px;
+.container h5 { 
+    padding-top: 20px;
 }
 
 p.visa {
@@ -61,4 +61,5 @@ ul {
 /*Footer*/
 footer {
     background-color: #56CBF9;
+    padding: 20px;
 }

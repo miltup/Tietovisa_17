@@ -22,6 +22,7 @@ header h1 {
 #headerimage {
     max-width: 100px;
     float: right;
+    margin-right: 20px;
 }
 
 /*Navbar*/
@@ -55,4 +56,5 @@ h2 {
 footer {
     background-color: #56CBF9;
     padding: 20px;
+    font-size: 0.75em;
 }

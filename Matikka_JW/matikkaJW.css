@@ -52,6 +52,13 @@ h2 {
     color: #8F002B;
 }
 
+#linkOfPicture {
+    display: none;
+    font-size: 0.75em;
+    text-decoration: none;
+    margin-left: 50%;
+}
+
 /*Footer*/
 footer {
     background-color: #56CBF9;

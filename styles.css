@@ -18,19 +18,26 @@ h2 {
 }
 
 header {
-    background-color: #56CBF9;;
+    background-color: #56CBF9;
 }
 
 #headerimage {
     max-width: 100px;
     float: right;
+    margin-right: 20px;
 }
 
 .navbar-custom {
     background-color: #81F4E1;
 }
 
+.img-fluid {
+    max-width: 280px;
+    margin: 10px;
+}
+
 footer {
     background-color: #56CBF9;
     padding: 20px;
+    font-size: 0.75em;
 }

@@ -215,7 +215,8 @@
             point++;
         } return point;
     }
-
+    
+    //Checking bonus question answer
     function checkBonus() {
         document.getElementById("bonusInput").innerHTML = "";
         document.getElementById("bonusresult").innerHTML = "";
@@ -227,5 +228,5 @@
             bonusResult.innerHTML = "Oikein! Kuvassa on Big Ben, Lontoon parlamenttitalon kellotorni.";
         } else {
             bonusResult.innerHTML = "Kuvassa on Big Ben, Lontoon parlamenttitalon kellotorni.";
-        } 
+        }
     }

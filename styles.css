@@ -36,6 +36,12 @@ header {
     margin: 10px;
 }
 
+p a {
+    font-size: 0.75em;
+    text-decoration: none;
+    margin-left: 50%;
+}
+
 footer {
     background-color: #56CBF9;
     padding: 20px;

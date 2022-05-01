@@ -12,4 +12,5 @@ Sivusto on vapaasti käytettävissä, eikä sinne tarvitse kirjautua.
 Sivusto on rakennettu käyttämällä bootstrapia, sekä html, css ja javascript tiedostoja.
 
 TEKIJÄT
+
 Milla Tuppurainen, Sami Vauhkonen, Jante Wallin

@@ -34,7 +34,7 @@
                 <a class="nav-link" aria-current="page" href="../index.html">Etusivu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../Englanti_MT/englanti.html">Englanninkielen visa</a>
+                <a class="nav-link" href="../Englanti_MT/englanti.html">Englanti-visa</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../Matikka_JW/matikkaJW.html">Matikkavisa 1</a>
@@ -50,25 +50,38 @@
         </div>
       </nav>
     <!--Bootstrap Grid-->
-    <div class="container">
+    <div class="container border">
       <div class="row">
         <div class="col">
           <h2>Matikkavisa #2</i></h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">Kysymys 1
-
+      <div class="row  mb-5">
+        <div class="col-md-6 border border-1 mb-5">Kysymys 1 <span id="eka">H</span> + <span id="toka">L</span>
+        <label for="input"><input id="vastaus" type="value"></label>
         </div>
-        <div class="col-md-6">Kysymys 2
-
+        <div class="col-md-6 border border-1 mb-5">Kysymys 2 <span id="eka2">H</span> - <span id="toka2">L</span>
+            <label for="input"><input id="vastaus2" type="value"></label>
         </div>
-        <div class="col-md-6">Kysymys 3
-
+        <div class="col-md-6 border border-1 mb-5">Kysymys 3 <span id="eka3">H</span> / <span id="toka3">L</span>
+            <label for="input"><input id="vastaus3" type="value"></label>
         </div>
-        <div class="col-md-6">Kysymys 4
+        <div class="col-md-6 border border-1 mb-5">Kysymys 4 <span id="eka4">H</span> * <span id="toka4">L</span>
+            <label for="input"><input id="vastaus4" type="value"></label>
+        </div>
+        <div class="col-md-6 border border-1 mb-5">Kysymys 5 <span id="eka5">H</span> + <span id="toka5">L</span>
+            <label for="input"><input id="vastaus5" type="value"></label>
+        </div>    
+        <div class="col-md-6 border border-1 mb-5">Kysymys 6 <span id="eka6">H</span> + <span id="toka6"> / </span> / <span id="toka7">L</span>
+            <label for="input"><input id="vastaus6" type="value"></label>
+        </div>                
+      </div>
+      <div class="vastausten-tarkistus text-center border">
+        <span id="vastaukset">Katsotaan miten meni!</span>
 
-        </div>            
+      </div>
+      <div class="palkinto">
+          <button class="col-md-12" id="tarkista" onclick="tarkistaVastaukset()">Tarkista vastauksesi</button>
       </div>
     </div>
     <footer class="footer text-center border border-dark border-5 mt-auto">

@@ -148,22 +148,28 @@ function calculate5() {
  */
 function rewards() {
 
+
     if (points.length < 1) {
         document.getElementById("points").innerHTML = "Et saanut yhtään pistettä. Yritä uudelleen.";
     } else if (points.length < 2) {
         document.getElementById("points").innerHTML = "Sait yhden pisteen!";
         document.getElementById("rewards").innerHTML = '<img src="../Images/coins.png">';
+        document.getElementById("linkOfPicture").style.display = "block";
     } else if (points.length < 3) {
         document.getElementById("points").innerHTML = "Sait kaksi pistettä!";
         document.getElementById("rewards").innerHTML = '<img src="../Images/emerald.png">';
+        document.getElementById("linkOfPicture").style.display = "block";
     } else if (points.length < 4) {
         document.getElementById("points").innerHTML = "Sait kolme pistettä!";
         document.getElementById("rewards").innerHTML = '<img src="../Images/ruby.png">';
+        document.getElementById("linkOfPicture").style.display = "block";
     } else if (points.length < 5) {
         document.getElementById("points").innerHTML = "Sait neljä pistettä!";
         document.getElementById("rewards").innerHTML = '<img src="../Images/diamond.png">';
+        document.getElementById("linkOfPicture").style.display = "block";
     } else {
         document.getElementById("points").innerHTML = "Sait kaikki oikein!";
         document.getElementById("rewards").innerHTML = '<img src="../Images/chest.png">';
+        document.getElementById("linkOfPicture").style.display = "block";
     }
 }

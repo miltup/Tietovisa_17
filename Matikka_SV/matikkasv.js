@@ -108,6 +108,7 @@ function tarkistaVastaukset() {
     }
     document.getElementById("vastaukset py-3 mb-5").innerText = (oikein + "/6" + " oikein");
     document.querySelector(".rysa").toggleAttribute("hidden");
+    document.getElementById("tarkista").toggleAttribute("disabled");
 }
 
 teeLaskut();
@@ -121,6 +122,7 @@ function tyhjennaPalkinnot() {
 
 
 function arvoUudet() {
+    document.getElementById("tarkista").toggleAttribute("disabled");
     teeLaskut();
     oliTyhja();
     tyhjennaPalkinnot();

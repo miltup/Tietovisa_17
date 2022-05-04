@@ -55,3 +55,6 @@ button:hover {
 #vasemmalle {
     padding-right: 70px;
 }
+button {
+    font-size: 30px;
+}

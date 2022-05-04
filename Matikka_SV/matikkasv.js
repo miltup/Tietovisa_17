@@ -50,53 +50,105 @@ function teeLaskut() {
 
 // Funktio käy läpi kaikki vastaukset ja tulostaa tulokset. (Mahdollisesti huonoimmalla mahdollisella tavalla :D)
 function tarkistaVastaukset() {
+    onkoTyhja();
     let oikein = 0;
     if(document.getElementById("vastaus").value==(Number(v1.innerText)+Number(v11.innerText))) {
-        console.log("Oikein +");
         document.getElementById("vastaus").style.color = "rgb(0, 255, 0)";
         document.getElementById("vastaus").classList.add("text-center");
         oikein++; 
-    } 
+    } else {
+        document.getElementById("vastaus").style.color = "red";
+    }
     if(document.getElementById("vastaus2").value==(Number(v2.innerText)-Number(v22.innerText))){
-        console.log("Oikein +");
         document.getElementById("vastaus2").style.color = "rgb(0, 255, 0)";
         document.getElementById("vastaus2").classList.add("text-center");
         oikein++; 
-    } 
+    }  else {
+        document.getElementById("vastaus2").style.color = "red";
+    }
     if(document.getElementById("vastaus3").value==(Number(v3.innerText)-Number(v33.innerText))){
-        console.log("Oikein +");
         document.getElementById("vastaus3").style.color = "rgb(0, 255, 0)";
         document.getElementById("vastaus3").classList.add("text-center");
         oikein++; 
-    } 
+    }  else {
+        document.getElementById("vastaus3").style.color = "red";
+    }
     if(document.getElementById("vastaus4").value==(Number(v4.innerText)*Number(v44.innerText))){
-        console.log("Oikein +");
         document.getElementById("vastaus4").style.color = "rgb(0, 255, 0)";
         document.getElementById("vastaus4").classList.add("text-center");
         oikein++; 
-    } 
+    } else {
+        document.getElementById("vastaus4").style.color = "red";
+    }
     if(document.getElementById("vastaus5").value==(Number(v5.innerText)+Number(v55.innerText))){
-        console.log("Oikein +");
         document.getElementById("vastaus5").style.color = "rgb(0, 255, 0)"; 
         document.getElementById("vastaus5").classList.add("text-center");
         oikein++;
-    } 
+    } else {
+        document.getElementById("vastaus5").style.color = "red";
+    }
     if(document.getElementById("vastaus6").value==Number(v6.innerText)+Number(v66.innerText)+Number(v7.innerText)){
-        console.log("Oikein +");
         document.getElementById("vastaus6").style.color = "rgb(0, 255, 0)";
         document.getElementById("vastaus6").classList.add("text-center");
         oikein++; 
+    } else {
+        document.getElementById("vastaus6").style.color = "red";
     }
-    document.getElementById("vastaukset py-3 mb-5").innerText = ("Oikein: " + oikein + "/6");
+    if(oikein>=0&&oikein<3) {
+        document.getElementById("tervehdys").innerText = ("Nyt meni sen verran metsään, että matikan kirja käteen!");
+    } else if(oikein>=3&&oikein<5) {
+        document.getElementById("tervehdys").innerText = ("Perusteet jo hallussa! Sait");
+        document.querySelector("img[name=palkinto3]").removeAttribute("hidden");
+    }  else if(oikein==5) {
+        document.getElementById("tervehdys").innerText = ("Melkein nappiin! Sait");
+        document.querySelector("img[name=palkinto2]").removeAttribute("hidden");
+    } else {
+        document.getElementById("tervehdys").innerText = ("Täydet pisteet! Loistavaa!");
+        document.querySelector("img[name=palkinto1]").removeAttribute("hidden");
+    }
+    document.getElementById("vastaukset py-3 mb-5").innerText = (oikein + "/6" + " oikein");
+    document.querySelector(".rysa").toggleAttribute("hidden");
 }
 
 teeLaskut();
 
+function tyhjennaPalkinnot() {
+    let o = document.querySelectorAll("img[name^=palkinto]")
+    for(let i=0;i<o.length;i++) {
+        o[i].setAttribute("hidden", "true");
+    }
+}
+
+
 function arvoUudet() {
     teeLaskut();
+    oliTyhja();
+    tyhjennaPalkinnot();
     document.getElementById("vastaukset py-3 mb-5").innerText = ("");
+    document.querySelector(".rysa").toggleAttribute("hidden");
+    document.getElementById("tervehdys").innerText = ("");
     let h = document.querySelectorAll("input[name^=vastaus]");
     for(let i=0;i<h.length;i++) {
         h[i].value = "";
+        h[i].classList.remove("text-center");
+        h[i].style.color = "white";
+    }
+}
+function onkoTyhja() {
+    let y = document.querySelectorAll("input[name^=vastaus]");
+    for(let i=0;i<y.length;i++) {
+        if(y[i].innerText==="") {
+            y[i].setAttribute("value", "7777");
+            y[i].setAttribute("disabled", "true");
+        }
+    }
+}
+
+function oliTyhja() {
+    let j = document.querySelectorAll("input[name^=vastaus]");
+    for(let i=0;i<j.length;i++) {
+        if(j[i].innerText==="") {
+            j[i].removeAttribute("disabled");
+        }
     }
 }

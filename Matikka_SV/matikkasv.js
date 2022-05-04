@@ -140,7 +140,7 @@ function onkoTyhja() {
     let y = document.querySelectorAll("input[name^=vastaus]");
     for(let i=0;i<y.length;i++) {
         if(y[i].innerText==="") {
-            y[i].setAttribute("value", "7777");
+            y[i].setAttribute("value", "");
             y[i].setAttribute("disabled", "true");
         }
     }

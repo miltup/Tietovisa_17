@@ -58,3 +58,8 @@ button:hover {
 button {
     font-size: 30px;
 }
+
+img {
+    user-select: none;
+    pointer-events: none;
+}

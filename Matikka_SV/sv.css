@@ -7,7 +7,7 @@ span {
     color: rgb(255, 255, 255);
 }
 body {
-    background-color: grey;
+    background-color: #81F4E1;
 }
 [class="col-md-6  mb-5 text-center"] {
     font-size: 1.5em;
@@ -21,8 +21,11 @@ body {
 }
 input {
     opacity: 0.5;
+    border-radius: 20%;
 }
-
+input:hover {
+    border-color: rgb(0, 253, 63);
+}
 h1 {
     color: white;
 }
@@ -30,4 +33,9 @@ h1 {
 button:hover {
     color: white;
     user-select: none;
+}
+
+[class="mb-5 fonttivaihtoon text-center"] {
+    border-bottom: 1px solid;
+    border-radius: 25%;
 }

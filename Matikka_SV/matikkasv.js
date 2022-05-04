@@ -18,7 +18,9 @@ let v6 = document.getElementById("eka6");
 let v66 = document.getElementById("toka6");
 let v7 = document.getElementById("toka7");
 // Kysymys 6 ^
-let taulukko = [v1, v11, v2, v22, v3, v33, v4, v44, v5, v55, v6, v66, v7];
+// let taulukko = [v1, v11, v2, v22, v3, v33, v4, v44, v5, v55, v6, v66, v7];
+let taulukko = [v1, v2, v3, v4, v5, v6, v7];
+let taulukko2 = [v11, v22, v33, v44, v55, v66]
 
 //Random number generator funktio haettu: https://www.w3schools.com/js/js_random.asp
 function getRndInteger(min, max) {
@@ -27,9 +29,22 @@ function getRndInteger(min, max) {
 
 function teeLaskut() {
     for(let i=0;i<taulukko.length;i++) {
-        taulukko[i].innerText = getRndInteger(1,15);
-        console.log(taulukko[i].innerText);
-    } 
+        if(i==3) {
+            taulukko[i].innerText = getRndInteger(1,10);
+        }else {
+            taulukko[i].innerText = getRndInteger(15,30);
+            console.log("Taulukko 1 : " + taulukko[i].innerText);
+        }
+    }
+    for(let i=0;i<taulukko2.length;i++) {
+    if(i==3) {
+        taulukko2[i].innerText = getRndInteger(1,10);
+        console.log(taulukko2[i].innerText)
+    } else {
+        taulukko2[i].innerText = getRndInteger(1,15);
+        console.log("Taulukko 2 : " + taulukko2[i].innerText)
+    }
+}
 }
 
 
@@ -45,7 +60,7 @@ function tarkistaVastaukset() {
         document.getElementById("vastaus2").style.color = "rgb(0, 255, 0)";
         oikein++; 
     } 
-    if(document.getElementById("vastaus3").value==(Number(v3.innerText)/Number(v33.innerText))){
+    if(document.getElementById("vastaus3").value==(Number(v3.innerText)-Number(v33.innerText))){
         console.log("Oikein +");
         document.getElementById("vastaus3").style.color = "rgb(0, 255, 0)";
         oikein++; 
@@ -60,13 +75,12 @@ function tarkistaVastaukset() {
         document.getElementById("vastaus5").style.color = "rgb(0, 255, 0)"; 
         oikein++;
     } 
-    if(document.getElementById("vastaus6").value==Number(v6.innerText)+Number(v66.innerText)/Number(v7.innerText)){
+    if(document.getElementById("vastaus6").value==Number(v6.innerText)+Number(v66.innerText)+Number(v7.innerText)){
         console.log("Oikein +");
         document.getElementById("vastaus6").style.color = "rgb(0, 255, 0)";
         oikein++; 
     }
     document.getElementById("vastaukset").innerText = "Oikein: " + oikein + "/6";
-    document.getElementById("vastaukset").style.diplay = "block";
 }
 
 teeLaskut();

@@ -30,7 +30,7 @@ function getRndInteger(min, max) {
 function teeLaskut() {
     for(let i=0;i<taulukko.length;i++) {
         if(i==3) {
-            taulukko[i].innerText = getRndInteger(1,10);
+            taulukko[i].innerText = getRndInteger(3,10);
         }else {
             taulukko[i].innerText = getRndInteger(15,30);
             console.log("Taulukko 1 : " + taulukko[i].innerText);
@@ -38,7 +38,7 @@ function teeLaskut() {
     }
     for(let i=0;i<taulukko2.length;i++) {
     if(i==3) {
-        taulukko2[i].innerText = getRndInteger(1,10);
+        taulukko2[i].innerText = getRndInteger(5,10);
         console.log(taulukko2[i].innerText)
     } else {
         taulukko2[i].innerText = getRndInteger(1,15);
@@ -48,46 +48,55 @@ function teeLaskut() {
 }
 
 
+// Funktio käy läpi kaikki vastaukset ja tulostaa tulokset. (Mahdollisesti huonoimmalla mahdollisella tavalla :D)
 function tarkistaVastaukset() {
     let oikein = 0;
     if(document.getElementById("vastaus").value==(Number(v1.innerText)+Number(v11.innerText))) {
         console.log("Oikein +");
         document.getElementById("vastaus").style.color = "rgb(0, 255, 0)";
+        document.getElementById("vastaus").classList.add("text-center");
         oikein++; 
     } 
     if(document.getElementById("vastaus2").value==(Number(v2.innerText)-Number(v22.innerText))){
         console.log("Oikein +");
         document.getElementById("vastaus2").style.color = "rgb(0, 255, 0)";
+        document.getElementById("vastaus2").classList.add("text-center");
         oikein++; 
     } 
     if(document.getElementById("vastaus3").value==(Number(v3.innerText)-Number(v33.innerText))){
         console.log("Oikein +");
         document.getElementById("vastaus3").style.color = "rgb(0, 255, 0)";
+        document.getElementById("vastaus3").classList.add("text-center");
         oikein++; 
     } 
     if(document.getElementById("vastaus4").value==(Number(v4.innerText)*Number(v44.innerText))){
         console.log("Oikein +");
         document.getElementById("vastaus4").style.color = "rgb(0, 255, 0)";
+        document.getElementById("vastaus4").classList.add("text-center");
         oikein++; 
     } 
     if(document.getElementById("vastaus5").value==(Number(v5.innerText)+Number(v55.innerText))){
         console.log("Oikein +");
         document.getElementById("vastaus5").style.color = "rgb(0, 255, 0)"; 
+        document.getElementById("vastaus5").classList.add("text-center");
         oikein++;
     } 
     if(document.getElementById("vastaus6").value==Number(v6.innerText)+Number(v66.innerText)+Number(v7.innerText)){
         console.log("Oikein +");
         document.getElementById("vastaus6").style.color = "rgb(0, 255, 0)";
+        document.getElementById("vastaus6").classList.add("text-center");
         oikein++; 
     }
-    document.getElementById("vastaukset").innerText = "Oikein: " + oikein + "/6";
+    document.getElementById("vastaukset py-3 mb-5").innerText = ("Oikein: " + oikein + "/6");
 }
 
 teeLaskut();
 
 function arvoUudet() {
+    teeLaskut();
+    document.getElementById("vastaukset py-3 mb-5").innerText = ("");
     let h = document.querySelectorAll("input[name^=vastaus]");
-    for(let i=0; i<h.length;i++) {
+    for(let i=0;i<h.length;i++) {
         h[i].value = "";
     }
 }

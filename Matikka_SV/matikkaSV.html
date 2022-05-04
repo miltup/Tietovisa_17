@@ -51,41 +51,42 @@
         </div>
       </nav>
     <!--Bootstrap Grid-->
-    <div class="container border bg-grey bg-light" alt="Girl in a jacket">
+    <div class="container border bg-grey bg-light">
       <div class="row">
         <div class="col">
           <h1 class="mb-5 fonttivaihtoon text-center">Matikkavisa #2</h1>
         </div>
       </div>
-      <div class="row  mb-5">
-        <div class="col-md-6  mb-5 text-center">Kysymys 1 <br> <span id="eka">H</span> + <span id="toka">L</span> =
-        <label for="input"><input id="vastaus" name="vastaus" type="value"></label>
+      <div class="row mb-5">
+        <div class="col-md-6  mb-5 text-center" id="vasemmalle"><h3>Tehtävä 1</h3>  <span id="eka">H</span> + <span id="toka">L</span> =
+        <label for="input"><input type="number" id="vastaus" name="vastaus"></label>
         </div>
-        <div class="col-md-6  mb-5 text-center">Kysymys 2 <br> <span id="eka2">H</span> - <span id="toka2">L</span> =
-            <label for="input"><input id="vastaus2" name="vastaus2" type="value"></label>
+        <div class="col-md-6  mb-5 text-center" id="vasemmalle"><h3>Tehtävä 2</h3>  <span id="eka2">H</span> - <span id="toka2">L</span> =
+            <label for="input"><input type="number" id="vastaus2" name="vastaus2"></label>
         </div>
-        <div class="col-md-6  mb-5 text-center">Kysymys 3 <br>  <span id="eka3">H</span> - <span id="toka3">L</span> =
-            <label for="input"><input id="vastaus3" name="vastaus3" type="value"></label>
+        <div class="col-md-6  mb-5 text-center" id="vasemmalle"><h3>Tehtävä 3</h3>   <span id="eka3">H</span> - <span id="toka3">L</span> =
+            <label for="input"><input type="number" id="vastaus3" name="vastaus3"></label>
         </div>
-        <div class="col-md-6  mb-5 text-center">Kysymys 4 <br> <span id="eka4">H</span> * <span id="toka4">L</span> =
-            <label for="input"><input id="vastaus4" name="vastaus4" type="value"></label>
+        <div class="col-md-6  mb-5 text-center" id="vasemmalle"><h3>Tehtävä 4</h3>  <span id="eka4">H</span> * <span id="toka4">L</span> = 
+            <label for="input"><input type="number" id="vastaus4" name="vastaus4"></label>
         </div>
-        <div class="col-md-6  mb-5 text-center">Kysymys 5 <br> <span id="eka5">H</span> + <span id="toka5">L</span> =
-            <label for="input"><input id="vastaus5" name="vastaus5" type="value"></label>
+        <div class="col-md-6  mb-5 text-center" id="vasemmalle"><h3>Tehtävä 5</h3>  <span id="eka5">H</span> + <span id="toka5">L</span> =
+            <label for="input"><input type="number" id="vastaus5" name="vastaus5"></label>
         </div>    
-        <div class="col-md-6  mb-5 text-center">Kysymys 6 <br> <span id="eka6">H</span> + <span id="toka6"> / </span> + <span id="toka7">L</span> =
-            <label for="input"><input id="vastaus6" name="vastaus6" type="value"></label>
+        <div class="col-md-6  mb-5 text-center" id="vasemmalle"><h3>Tehtävä 6</h3>  <span id="eka6">H</span> + <span id="toka6"> / </span> + <span id="toka7">L</span> =
+            <label for="input"><input type="number" id="vastaus6" name="vastaus6"></label>
         </div>                
       </div>
-      <div class="vastausten-tarkistus text-center d-none">
-        <span id="vastaukset py-3 mb-5">Katsotaan miten meni!</span>
+      <div class="vastausten-tarkistus text-center">
+        <span id="vastaukset py-3 mb-5"></span>
 
       </div>
-      
+      <div class="row">
       <div class="palkinto py-1">
-          <button class="col-md-12" id="tarkista" onclick="tarkistaVastaukset()">Tarkista vastauksesi</button>
+          <button class="col-md-12" id="tarkista" onclick="tarkistaVastaukset()"><strong>Tarkista Vastaukset</strong></button>
           <button class="col-md-12" id="tarkista" onclick="arvoUudet()">Arvo uudet kysymykset</button>
       </div>
+    </div>
     </div>
     <footer class="footer text-center border border-dark border-5 mt-auto">
       <div class="container">

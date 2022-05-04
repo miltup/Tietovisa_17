@@ -50,3 +50,7 @@ footer {
 span {
     user-select: none;
 }
+
+#tarkista {
+    background: #56CBF9;
+}

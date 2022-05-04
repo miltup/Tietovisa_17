@@ -10,6 +10,7 @@
 
     <!--CSS-->
     <link href="../styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="sv.css">
     
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/5fd3e95cfd.js" crossorigin="anonymous"></script>
@@ -50,38 +51,40 @@
         </div>
       </nav>
     <!--Bootstrap Grid-->
-    <div class="container border bg-grey bg-light">
+    <div class="container border bg-grey bg-light" alt="Girl in a jacket">
       <div class="row">
         <div class="col">
-          <h1 class="mb-5 fonttivaihtoon">Matikkavisa #2</h1>
+          <h1 class="mb-5 fonttivaihtoon text-center">Matikkavisa #2</h1>
         </div>
       </div>
       <div class="row  mb-5">
-        <div class="col-md-6 border border-1 mb-5">Kysymys 1 =>  <span id="eka">H</span> + <span id="toka">L</span>
+        <div class="col-md-6  mb-5 text-center">Kysymys 1 <br> <span id="eka">H</span> + <span id="toka">L</span> =
         <label for="input"><input id="vastaus" name="vastaus" type="value"></label>
         </div>
-        <div class="col-md-6 border border-1 mb-5">Kysymys 2 =>  <span id="eka2">H</span> - <span id="toka2">L</span>
+        <div class="col-md-6  mb-5 text-center">Kysymys 2 <br> <span id="eka2">H</span> - <span id="toka2">L</span> =
             <label for="input"><input id="vastaus2" name="vastaus2" type="value"></label>
         </div>
-        <div class="col-md-6 border border-1 mb-5">Kysymys 3 =>  <span id="eka3">H</span> / <span id="toka3">L</span>
+        <div class="col-md-6  mb-5 text-center">Kysymys 3 <br>  <span id="eka3">H</span> / <span id="toka3">L</span> =
             <label for="input"><input id="vastaus3" name="vastaus3" type="value"></label>
         </div>
-        <div class="col-md-6 border border-1 mb-5">Kysymys 4 =>  <span id="eka4">H</span> * <span id="toka4">L</span>
+        <div class="col-md-6  mb-5 text-center">Kysymys 4 <br> <span id="eka4">H</span> * <span id="toka4">L</span> =
             <label for="input"><input id="vastaus4" name="vastaus4" type="value"></label>
         </div>
-        <div class="col-md-6 border border-1 mb-5">Kysymys 5 =>  <span id="eka5">H</span> + <span id="toka5">L</span>
+        <div class="col-md-6  mb-5 text-center">Kysymys 5 <br> <span id="eka5">H</span> + <span id="toka5">L</span> =
             <label for="input"><input id="vastaus5" name="vastaus5" type="value"></label>
         </div>    
-        <div class="col-md-6 border border-1 mb-5">Kysymys 6 =>  <span id="eka6">H</span> + <span id="toka6"> / </span> / <span id="toka7">L</span>
+        <div class="col-md-6  mb-5 text-center">Kysymys 6 <br> <span id="eka6">H</span> + <span id="toka6"> / </span> / <span id="toka7">L</span> =
             <label for="input"><input id="vastaus6" name="vastaus6" type="value"></label>
         </div>                
       </div>
       <div class="vastausten-tarkistus text-center border">
-        <span id="vastaukset">Katsotaan miten meni!</span>
+        <span id="vastaukset py-3 mb-5">Katsotaan miten meni!</span>
 
       </div>
-      <div class="palkinto">
+      
+      <div class="palkinto py-1">
           <button class="col-md-12" id="tarkista" onclick="tarkistaVastaukset()">Tarkista vastauksesi</button>
+          <button class="col-md-12" id="tarkista" onclick="arvoUudet()">Arvo uudet kysymykset</button>
       </div>
     </div>
     <footer class="footer text-center border border-dark border-5 mt-auto">

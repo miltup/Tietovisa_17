@@ -32,7 +32,7 @@ function teeLaskut() {
         if(i==3) {
             taulukko[i].innerText = getRndInteger(3,10);
         }else {
-            taulukko[i].innerText = getRndInteger(15,30);
+            taulukko[i].innerText = getRndInteger(15,60);
             console.log("Taulukko 1 : " + taulukko[i].innerText);
         }
     }

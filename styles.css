@@ -54,3 +54,9 @@ span {
 #tarkista {
     background: #56CBF9;
 }
+#tervehdys {
+    font-size:30px;
+}
+[id="vastaukset py-3 mb-5"] {
+    font-size: 30px;
+}
